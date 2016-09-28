@@ -39,9 +39,9 @@ This project contains a database of motif information from the above study along
 
 Usage:
 
-python run_motif_search.py <my_sequences.fa>
+python run_motif_search.py my_sequences.fa
 
-The input file is in fasta format. The tool outputs a few different reports about which motifs seem enriched. It can potentially support additional customization, but the UI for that is under development.
+The input file is in [fasta format](run_motif_search.py). The tool outputs a few different reports about which motifs seem enriched. It can potentially support additional customization, but the UI for that is under development.
 
 
 
