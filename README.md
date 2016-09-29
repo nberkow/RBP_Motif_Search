@@ -51,7 +51,9 @@ GRANT SELECT ON rbp_motifs.* TO 'motif_search'@'localhost';
 
 Once the database and user are created, run:
 
+```
 python run_motif_search.py my_sequences.fa
+```
 
 The input file is in [fasta format](run_motif_search.py). The tool outputs a few different reports about which motifs seem enriched. It can potentially support additional customization, but the UI for that is under development.
 
