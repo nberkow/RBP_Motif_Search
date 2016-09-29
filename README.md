@@ -35,9 +35,21 @@ Ray D, Kazan H, Cook KB, Weirauch MT, Najafabadi HS, Li X, Gueroussov S, Albu M,
 
 ### A motif database
 
-This project contains a database of motif information from the above study along with a lightweight Python tool for scanning sequences of interest for motifs.
+This project contains a database of motif information from the above study along with a lightweight Python tool for scanning sequences of interest for motifs. This repository contains an empty database. Fully populated database is available as a mysql dump from PennBox:
 
-Usage:
+https://upenn.app.box.com/files/0/f/11511405639/RBP_Motif_Search
+
+This version of the script logs into the database as a user with username **motif_search** and no password. It's recommended that this user be created and granted select access only.
+
+```
+CREATE USER 'motif_search'@'localhost';
+GRANT SELECT ON rbp_motifs.* TO 'motif_search'@'localhost';
+```
+
+
+### Usage:
+
+Once the database and user are created, run:
 
 python run_motif_search.py my_sequences.fa
 
