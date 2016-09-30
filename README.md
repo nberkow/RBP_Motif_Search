@@ -20,7 +20,7 @@ GGCUUA
 GGCUAU
 CGCUAA
 
-For this reason, motifs are often represented a position weight matrices.
+For this reason, motifs are often represented a position weight matrices (PWM), where the frequency of each of the four possible nucleotides is given for each position.
 
 ### Experimentally determined motifs
 
